@@ -1,0 +1,133 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Flexbox layout for the app */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Logout button container */
+.logout-container {
+    display: flex;
+    gap: 10px; /* Adjust spacing between buttons */
+    align-items: center;
+}
+
+button {
+    background-color: #5b67ca;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4a57b1;
+}
+
+/* Main content container */
+.content-container {
+    width: 100%;
+    max-width: 1200px; /* Adjust this value as needed */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Flexbox container for persona list and conversation */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Persona list styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Flex item styling for PersonaList and Conversation */
+.flex-container > * {
+    flex: 1; /* Each item takes up equal space */
+}
+
+/* Persona preview box */
+.persona-preview {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Message styling */
+.message {
+    font-size: 18px;
+    color: #888;
+}
+
+/* Conversation item styling */
+.conversation-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.conversation-item {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.conversation-textarea {
+    width: 100%;        /* Make it full-width */
+    height: 150px;      /* Increase height for better visibility */
+    padding: 10px;      /* Add some padding inside the text area */
+    margin-bottom: 15px; /* Add margin below the text area to separate it from the button */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.conversation-submit-button {
+    background-color: #5b67ca;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.conversation-submit-button:hover {
+    background-color: #4a57b1;
+}
+  
+.switch-button {
+    margin-left: 10px; /* Additional spacing from Logout */
+}  
